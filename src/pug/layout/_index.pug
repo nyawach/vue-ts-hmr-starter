@@ -1,0 +1,12 @@
+extends /layout/_default-layout
+
+prepend config-block
+  - page_name = ''
+
+//- append stylesheet-block
+
+append javascript-block
+  script(src=basePath + "/js/script.js?v="+versions["script.js"])
+
+block content-block
+  #app
