@@ -57,6 +57,14 @@ module.exports = {
         test: /\.sass$/,
         loader: ['vue-style-loader', 'css-loader', 'sass-loader?indentedSyntax']
       }, {
+        enforce: 'pre',
+        test: /\.ts$/,
+        loader: 'tslint-loader',
+        exclude: /node_modules/,
+        options: {
+          configFile: 'tslint.json',
+        },
+      }, {
         test: /\.ts$/,
         loader: 'ts-loader',
         exclude: /node_modules/,
@@ -73,6 +81,7 @@ module.exports = {
           loaders: {
             scss: ['vue-style-loader', 'css-loader', 'sass-loader'],
             sass: ['vue-style-loader', 'css-loader', 'sass-loader?indentedSyntax'],
+            ts: 'ts-loader!tslint-loader',
           },
         },
       }, {
