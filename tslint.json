@@ -1,7 +1,8 @@
 {
   "extends": ["tslint-config-airbnb"],
   "rules": {
+    "import-name": false,
     "max-line-length": [true, 120],
-    "import-name": false
+    "semicolon": [true, "never"]
   }
 }
