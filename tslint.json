@@ -3,6 +3,7 @@
   "rules": {
     "import-name": false,
     "max-line-length": [true, 120],
+    "no-unused-variable": true,
     "semicolon": [true, "never"]
   }
 }

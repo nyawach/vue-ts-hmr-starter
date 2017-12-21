@@ -63,6 +63,7 @@ module.exports = {
         exclude: /node_modules/,
         options: {
           configFile: 'tslint.json',
+          typeCheck: true,
         },
       }, {
         test: /\.ts$/,
