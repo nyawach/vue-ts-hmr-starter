@@ -11,8 +11,8 @@ export default Vue.extend({
   name: 'Index',
 
   computed: {
-    ...mapState('user', [ 'name' ]),
-  }
+    ...mapState('user', ['name']),
+  },
 })
 </script>
 

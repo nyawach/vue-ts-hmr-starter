@@ -17,14 +17,14 @@ const routes = [
     path:      '/about/',
     name:      ROUTES.ABOUT,
     component: About,
-  }
+  },
 ]
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const config: RouterOptions = {
   routes,
   mode: 'history',
 }
 
-export default new VueRouter(config);
+export default new VueRouter(config)

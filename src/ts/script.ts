@@ -8,6 +8,6 @@ import App    from './components/App.vue'
 const app = new Vue({
   router,
   store,
-  el: "#app",
-  render: (h) => h(App),
+  el: '#app',
+  render: h => h(App),
 })
